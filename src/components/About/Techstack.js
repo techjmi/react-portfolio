@@ -1,68 +1,129 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
+import { Card, Col, Row } from "react-bootstrap";
 import {
   DiJavascript1,
   DiReact,
   DiNodejs,
   DiMongodb,
-  DiPython,
   DiGit,
-  DiJava,
+  DiGithubBadge,
+  DiCss3,
+  DiHtml5,
 } from "react-icons/di";
 import {
-  SiRedis,
   SiFirebase,
   SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
+  SiTailwindcss,
+  SiJsonwebtokens,
 } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
+import { FaReact } from "react-icons/fa";
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+      <Col xs={6} md={4} lg={3} className="mb-4">
+        <Card className="h-100">
+          <Card.Body className="d-flex align-items-center">
+            <DiHtml5 size={40} className="me-1 text-primary" />
+            <Card.Title className="mb-0 purple">HTML</Card.Title>
+          </Card.Body>
+        </Card>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+      <Col xs={6} md={4} lg={3} className="mb-4">
+        <Card className="h-100">
+          <Card.Body className="d-flex align-items-center">
+            <DiCss3 size={40} className="me-1 text-primary" />
+            <Card.Title className="mb-0 purple">CSS</Card.Title>
+          </Card.Body>
+        </Card>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
+      <Col xs={6} md={4} lg={3} className="mb-4">
+        <Card className="h-100">
+          <Card.Body className="d-flex align-items-center">
+            <DiGit size={40} className="me-1 text-primary" />
+            <Card.Title className="mb-0 purple">Git</Card.Title>
+          </Card.Body>
+        </Card>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
+      <Col xs={6} md={4} lg={3} className="mb-4">
+        <Card className="h-100">
+          <Card.Body className="d-flex align-items-center">
+            <DiGithubBadge size={40} className="me-1 text-primary" />
+            <Card.Title className="mb-0 purple">GitHub</Card.Title>
+          </Card.Body>
+        </Card>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
+      <Col xs={12} md={4} lg={3} className="mb-4">
+        <Card className="h-100">
+          <Card.Body className="d-flex align-items-center">
+            <DiJavascript1 size={40} className="me-1 text-primary" />
+            <Card.Title className="mb-0 purple">JavaScript</Card.Title>
+          </Card.Body>
+        </Card>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
+      <Col xs={6} md={4} lg={3} className="mb-4">
+        <Card className="h-100">
+          <Card.Body className="d-flex align-items-center">
+            <DiReact size={40} className="me-1 text-primary" />
+            <Card.Title className="mb-0 purple">React.js</Card.Title>
+          </Card.Body>
+        </Card>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
+      <Col xs={6} md={4} lg={3} className="mb-4">
+        <Card className="h-100">
+          <Card.Body className="d-flex align-items-center">
+            <FaReact size={40} className="me-1 text-primary" />
+            <Card.Title className="mb-0 purple">React Native</Card.Title>
+          </Card.Body>
+        </Card>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
+      <Col xs={6} md={4} lg={3} className="mb-4">
+        <Card className="h-100">
+          <Card.Body className="d-flex align-items-center">
+            <DiNodejs size={40} className="me-1 text-primary" />
+            <Card.Title className="mb-0 purple">Node.js</Card.Title>
+          </Card.Body>
+        </Card>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
+      <Col xs={6} md={4} lg={3} className="mb-4">
+        <Card className="h-100">
+          <Card.Body className="d-flex align-items-center">
+            <DiMongodb size={40} className="me-1 text-primary" />
+            <Card.Title className="mb-0 purple">MongoDB</Card.Title>
+          </Card.Body>
+        </Card>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
+      <Col xs={6} md={4} lg={3} className="mb-4">
+        <Card className="h-100">
+          <Card.Body className="d-flex align-items-center">
+            <SiTailwindcss size={40} className="me-1 text-primary" />
+            <Card.Title className="mb-0 purple">Tailwind CSS</Card.Title>
+          </Card.Body>
+        </Card>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
+      <Col xs={6} md={4} lg={3} className="mb-4">
+        <Card className="h-100">
+          <Card.Body className="d-flex align-items-center">
+            <SiJsonwebtokens size={40} className="me-1 text-primary" />
+            <Card.Title className="mb-0 purple">JWT</Card.Title>
+          </Card.Body>
+        </Card>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
+      <Col xs={6} md={4} lg={3} className="mb-4">
+        <Card className="h-100">
+          <Card.Body className="d-flex align-items-center">
+            <SiNextdotjs size={40} className="me-1 text-primary" />
+            <Card.Title className="mb-0 purple">Next.js</Card.Title>
+          </Card.Body>
+        </Card>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
+      <Col xs={6} md={4} lg={3} className="mb-4">
+        <Card className="h-100">
+          <Card.Body className="d-flex align-items-center">
+            <SiFirebase size={40} className="me-1 text-primary" />
+            <Card.Title className="mb-0 purple">Firebase</Card.Title>
+          </Card.Body>
+        </Card>
       </Col>
     </Row>
   );

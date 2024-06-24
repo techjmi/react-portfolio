@@ -2,20 +2,15 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
+import {ImDisplay } from "react-icons/im";
 import { IoCallOutline } from "react-icons/io5";
 import {
-  AiFillStar,
   AiOutlineHome,
-  AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
 
-import { CgFileDocument } from "react-icons/cg";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 function NavBar() {
@@ -77,8 +72,8 @@ function NavBar() {
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
+                <ImDisplay 
+                  style={{ marginBottom: "2px", marginRight:"4px"}}
                 />
                 Projects
               </Nav.Link>
@@ -105,10 +100,12 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item className="fork-btn">
-              <Button>
-              <IoCallOutline className="me-2"/>
-              Contact Me
-              </Button>
+                <Link to='/contact' className="text-decoration-none">
+                <Button>
+                <IoCallOutline className="me-2"/>
+                Contact Me
+                </Button>
+                </Link>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

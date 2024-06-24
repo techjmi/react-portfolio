@@ -402,10 +402,12 @@ button:focus {
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 22);
+  /* position: relative !important; */
+  background-color: rgb(135, 106, 193);
   bottom: 0 !important;
-  padding-top: 10px !important;
-  padding-bottom: 8px !important ;
+  padding-top: 15px !important;
+  padding-bottom: 12px !important ;
+  margin-top: 20px;
 }
 .footer-copywright {
   text-align: center !important;
